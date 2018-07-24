@@ -1,6 +1,6 @@
 from django.urls import path, include
-from . import views
+from .views.api.candidates import CandidateListCreate
 
 urlpatterns = [
-    path('api/candidate/', views.CandidateListCreate.as_view() ),
+    path('api/candidates/', CandidateListCreate.as_view() ),
 ]

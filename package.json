@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-dev": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
-    "build-prod": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/main.js"
+    "bdev": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
+    "bprod": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
+    "bdevw": "webpack --mode development ./frontend/src/index.js --output ./frontend/static/frontend/main.js --watch"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,6 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "weak-key": "^1.0.0",
